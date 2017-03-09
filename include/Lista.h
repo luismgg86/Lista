@@ -1,16 +1,21 @@
-#include <iostream>
+#include "Nodo.h"
 
 class Lista{
 public:
 
+	Nodo *H,*T;
+	int dato;
+
 	Lista(int dato);
 	Lista();
+
 	void insertarP(int dato);
-	void insertarF(int dato,Nodo T);
-	bool Isvacio();
+	void insertarF(int dato);
 	void insertarRef(int dato,int ref);
-	Nodo buscar(int ref);
-	Nodo buscar(int ref,Nodo n);
-	void borrarF();
-	void borrarRef();
-}
+	bool IsVacio();
+	Nodo* buscar(int ref);
+	Nodo* buscar(int ref,Nodo *n);
+	int borrarP();
+	int borrarF();
+	int borrarRef(int ref);
+};

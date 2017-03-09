@@ -4,7 +4,11 @@
 CMakeFiles/Lista.dir/src/Lista.cpp.o
  ../include/Lista.h
  ../include/Nodo.h
- /home/luis/Documentos/Lista/src/Lista.cpp
+ /home/luis/Escritorio/Lista/src/Lista.cpp
 CMakeFiles/Lista.dir/src/Nodo.cpp.o
  ../include/Nodo.h
- /home/luis/Documentos/Lista/src/Nodo.cpp
+ /home/luis/Escritorio/Lista/src/Nodo.cpp
+CMakeFiles/Lista.dir/src/main.cpp.o
+ ../include/Lista.h
+ ../include/Nodo.h
+ /home/luis/Escritorio/Lista/src/main.cpp

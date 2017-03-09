@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documentos/Lista
+CMAKE_SOURCE_DIR = /home/luis/Escritorio/Lista
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documentos/Lista/build
+CMAKE_BINARY_DIR = /home/luis/Escritorio/Lista/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/Lista.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/luis/Documentos/Lista/build
 CMakeFiles/Lista.dir/all:
 	$(MAKE) -f CMakeFiles/Lista.dir/build.make CMakeFiles/Lista.dir/depend
 	$(MAKE) -f CMakeFiles/Lista.dir/build.make CMakeFiles/Lista.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/luis/Documentos/Lista/build/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/luis/Escritorio/Lista/build/CMakeFiles  1 2 3
 	@echo "Built target Lista"
 .PHONY : CMakeFiles/Lista.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/Lista.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lista.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documentos/Lista/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Escritorio/Lista/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Lista.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documentos/Lista/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Escritorio/Lista/build/CMakeFiles 0
 .PHONY : CMakeFiles/Lista.dir/rule
 
 # Convenience name for target.

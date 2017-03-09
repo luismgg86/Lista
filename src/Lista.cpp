@@ -1,7 +1,11 @@
 #include "Lista.h"
-#include "Nodo.h"
 
 using namespace std;
+
+	Lista::Lista(){
+		this->H=NULL;
+		this->T=NULL;
+	}
 
 	Lista::Lista(int dato){
 		Nodo *m=new Nodo(dato);
@@ -9,100 +13,154 @@ using namespace std;
 		this->T=H;
 	}
 
-	Lista::Lista(){
-		this->H=NULL;
-		this->T=NULL;
+	bool Lista::IsVacio(){
+		return(this->T==NULL && this->H==NULL);
 	}
 
 	void Lista::insertarP(int dato){
 		Nodo *m=new Nodo(dato,this->H);
-		if (IsVacio)
+		if (IsVacio())
 		{
-			T=m;
+			this->T=m;
 		}
-		H=m;
+		this->H=m;
 	}
 
-	void Lista::insertarF(int dato,Nodo T){
+	void Lista::insertarF(int dato){
 		Nodo *m=new Nodo(dato);
 		if(IsVacio()){
 			this->T=m;
 			this->H=m;
 			return;
 		}
-		this->T.sig=m;
+		this->T->sig=m->sig;
 		this->T=m;
-	}
-
-	bool Lista::IsVacio(){
-		return(T==NULL && H==NULL);
 	}
 
 	void Lista::insertarRef(int dato,int ref){
 		if(IsVacio()){
-			cout<<"Error esta vacia"<<endl;
+			cout<<"Error la lista esta vacia"<<endl;
 			return;
 		}
-		Nodo *m=new Nodo(ref);
+		Nodo *m=buscar(ref);
 		if (m==NULL)
 		{
-			cout<<"Error no se encontro el nodo"<<endl;
+			cout<<"Error la referencia no esta en la lista"<<endl;
+			return;
 		}
-		Nodo *n=new Nodo(dato,m.sig);
-		m.sig=n;
+		if(m->sig==NULL){
+			insertarF(dato);
+			return;
+		}
+		Nodo *n=new Nodo(dato,m->sig);
+		m->sig=n->sig;
+		return;
 	}
 
-	Nodo Lista::buscar(int ref){
-		Nodo aux=this->H;
-		while(aux.dato!=ref)
-			if(aux.sig==NULL){
-				cout<<"No se encontro"<<endl;
+	Nodo* Lista::buscar(int ref){
+		Nodo *aux=this->H;
+
+		if(IsVacio()){
+			cout<<"error la lista esta vacia"<<endl;
+			return NULL;
+		}
+
+		while(aux->dato!=ref)
+			if(aux->sig==NULL){
+				cout<<"la referencia no esta en la lista"<<endl;
 			}
-			aux=aux.sig;
+			aux=aux->sig;
 			return aux;
 	}
 
-	Nodo Lista::buscar(int ref,Nodo n){
-		if(n.dato!=ref){
-			if(n.sig==NULL){
-				cout<<"No se encontro"<<endl;
+	Nodo* Lista::buscar(int ref,Nodo *n){
+
+		if(IsVacio()){
+			cout<<"error la lista esta vacia"<<endl;
+			return NULL;
+		}
+
+		if(n->dato!=ref){
+			if(n->sig==NULL){
+				cout<<"error la referencia no esta en la lista"<<endl;
 				return NULL;
 			}
-			return Buscar(ref,n.sig);
+			return buscar(ref,n->sig);
 		}
 		return n;
 	}
 
-	void Lista::borrarP(){
-		Nodo aux=this->H;
-		this->H=this->H.sig;
+	int Lista::borrarP(){
+
+		int d=this->H->dato;
+
+		if(IsVacio()){
+			cout<<"error la lista esta vacia"<<endl;
+			return d;
+		}
+
+		Nodo *aux=this->H;
+		this->H=this->H->sig;
+
 		if (this->H==NULL)
 			this->T=NULL;
-		aux.sig=NULL;
+
+		aux->sig=NULL;
+
+		return d;
 	}
 
-	void Lista::borrarF(){
-		Nodo aux=this->H;
+	int Lista::borrarF(){
+
+		int d=this->H->dato;
+
+		if(IsVacio()){
+			cout<<"error la lista esta vacia"<<endl;
+			return d;
+		}
+
+		Nodo *aux=this->H;
 		if (this->H == this->T)
 		{
-			H=NULL;
-			T=NULL;
+			this->H=NULL;
+			this->T=NULL;
+			return d;
 		}
-		while(aux.sig!=T)
-			aux=aux.sig;
+
+		while(aux->sig!=this->T)
+			aux=aux->sig;
+
 		this->T=aux;
-		this->T.sig=NULL;
+		this->T->sig=NULL;
+		return d;
 	}
 
-	void Lista::borrarRef(int ref){
-		Nodo r=buscar(ref);
-		if(r==NULL){
-			cout<<"Error"<<endl;
-			return;
+	int Lista::borrarRef(int ref){
+
+		if(IsVacio()){
+			cout<<"error la lista esta vacia"<<endl;
+			return ref;
 		}
-		Nodo ant=this->H;
-		while(ant.sig!=r)
-			ant=ant.sig;
-		ant.sig=r.sig;
-		r.sig=NULL;
+
+		Nodo *r=buscar(ref);
+
+		if(r==NULL){
+			cout<<"error la referencia no esta en la lista"<<endl;
+			return ref;
+		}
+
+		if (this->H == this->T){
+		this->H = NULL;
+		this->T = NULL;
+		return ref;
+	    }
+
+		Nodo *ant=this->H;
+
+		while(ant->sig!=r)
+			ant=ant->sig;
+
+		ant->sig=r->sig;
+		r->sig=NULL;
+		return ref;
 	}

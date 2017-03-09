@@ -7,20 +7,14 @@
 #IncludeRegexTransform: 
 
 ../include/Lista.h
-iostream
--
+Nodo.h
+../include/Nodo.h
 
 ../include/Nodo.h
 iostream
 -
 
-/home/luis/Documentos/Lista/src/Lista.cpp
+/home/luis/Escritorio/Lista/src/Lista.cpp
 Lista.h
-/home/luis/Documentos/Lista/src/Lista.h
-Nodo.h
-/home/luis/Documentos/Lista/src/Nodo.h
-
-/home/luis/Documentos/Lista/src/Nodo.cpp
-Nodo.h
-/home/luis/Documentos/Lista/src/Nodo.h
+/home/luis/Escritorio/Lista/src/Lista.h
 

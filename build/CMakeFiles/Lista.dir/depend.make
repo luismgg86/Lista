@@ -8,3 +8,7 @@ CMakeFiles/Lista.dir/src/Lista.cpp.o: ../src/Lista.cpp
 CMakeFiles/Lista.dir/src/Nodo.cpp.o: ../include/Nodo.h
 CMakeFiles/Lista.dir/src/Nodo.cpp.o: ../src/Nodo.cpp
 
+CMakeFiles/Lista.dir/src/main.cpp.o: ../include/Lista.h
+CMakeFiles/Lista.dir/src/main.cpp.o: ../include/Nodo.h
+CMakeFiles/Lista.dir/src/main.cpp.o: ../src/main.cpp
+

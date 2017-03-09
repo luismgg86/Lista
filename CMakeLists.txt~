@@ -3,6 +3,6 @@ project(Lista)
 
 include_directories(include)
 
-set(SOURCES src/Lista.cpp  src/Nodo.cpp src/main.cpp)
+set(SOURCES src/Lista.cpp  src/Nodo.cpp)
 
 add_executable(Lista ${SOURCES})

@@ -1,1 +1,1 @@
-/home/luis/Documentos/Lista/build/CMakeFiles/Lista.dir
+/home/luis/Escritorio/Lista/build/CMakeFiles/Lista.dir

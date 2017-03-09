@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documentos/Lista
+CMAKE_SOURCE_DIR = /home/luis/Escritorio/Lista
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documentos/Lista/build
+CMAKE_BINARY_DIR = /home/luis/Escritorio/Lista/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Lista.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/Lista.dir/flags.make
 
 CMakeFiles/Lista.dir/src/Lista.cpp.o: CMakeFiles/Lista.dir/flags.make
 CMakeFiles/Lista.dir/src/Lista.cpp.o: ../src/Lista.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/luis/Documentos/Lista/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/luis/Escritorio/Lista/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Lista.dir/src/Lista.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Lista.dir/src/Lista.cpp.o -c /home/luis/Documentos/Lista/src/Lista.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Lista.dir/src/Lista.cpp.o -c /home/luis/Escritorio/Lista/src/Lista.cpp
 
 CMakeFiles/Lista.dir/src/Lista.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lista.dir/src/Lista.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/luis/Documentos/Lista/src/Lista.cpp > CMakeFiles/Lista.dir/src/Lista.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/luis/Escritorio/Lista/src/Lista.cpp > CMakeFiles/Lista.dir/src/Lista.cpp.i
 
 CMakeFiles/Lista.dir/src/Lista.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lista.dir/src/Lista.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/luis/Documentos/Lista/src/Lista.cpp -o CMakeFiles/Lista.dir/src/Lista.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/luis/Escritorio/Lista/src/Lista.cpp -o CMakeFiles/Lista.dir/src/Lista.cpp.s
 
 CMakeFiles/Lista.dir/src/Lista.cpp.o.requires:
 .PHONY : CMakeFiles/Lista.dir/src/Lista.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/Lista.dir/src/Lista.cpp.o.provides.build: CMakeFiles/Lista.dir/src/Li
 
 CMakeFiles/Lista.dir/src/Nodo.cpp.o: CMakeFiles/Lista.dir/flags.make
 CMakeFiles/Lista.dir/src/Nodo.cpp.o: ../src/Nodo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/luis/Documentos/Lista/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/luis/Escritorio/Lista/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Lista.dir/src/Nodo.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Lista.dir/src/Nodo.cpp.o -c /home/luis/Documentos/Lista/src/Nodo.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Lista.dir/src/Nodo.cpp.o -c /home/luis/Escritorio/Lista/src/Nodo.cpp
 
 CMakeFiles/Lista.dir/src/Nodo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lista.dir/src/Nodo.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/luis/Documentos/Lista/src/Nodo.cpp > CMakeFiles/Lista.dir/src/Nodo.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/luis/Escritorio/Lista/src/Nodo.cpp > CMakeFiles/Lista.dir/src/Nodo.cpp.i
 
 CMakeFiles/Lista.dir/src/Nodo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lista.dir/src/Nodo.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/luis/Documentos/Lista/src/Nodo.cpp -o CMakeFiles/Lista.dir/src/Nodo.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/luis/Escritorio/Lista/src/Nodo.cpp -o CMakeFiles/Lista.dir/src/Nodo.cpp.s
 
 CMakeFiles/Lista.dir/src/Nodo.cpp.o.requires:
 .PHONY : CMakeFiles/Lista.dir/src/Nodo.cpp.o.requires
@@ -95,16 +95,41 @@ CMakeFiles/Lista.dir/src/Nodo.cpp.o.provides: CMakeFiles/Lista.dir/src/Nodo.cpp.
 
 CMakeFiles/Lista.dir/src/Nodo.cpp.o.provides.build: CMakeFiles/Lista.dir/src/Nodo.cpp.o
 
+CMakeFiles/Lista.dir/src/main.cpp.o: CMakeFiles/Lista.dir/flags.make
+CMakeFiles/Lista.dir/src/main.cpp.o: ../src/main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/luis/Escritorio/Lista/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Lista.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Lista.dir/src/main.cpp.o -c /home/luis/Escritorio/Lista/src/main.cpp
+
+CMakeFiles/Lista.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lista.dir/src/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/luis/Escritorio/Lista/src/main.cpp > CMakeFiles/Lista.dir/src/main.cpp.i
+
+CMakeFiles/Lista.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lista.dir/src/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/luis/Escritorio/Lista/src/main.cpp -o CMakeFiles/Lista.dir/src/main.cpp.s
+
+CMakeFiles/Lista.dir/src/main.cpp.o.requires:
+.PHONY : CMakeFiles/Lista.dir/src/main.cpp.o.requires
+
+CMakeFiles/Lista.dir/src/main.cpp.o.provides: CMakeFiles/Lista.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lista.dir/build.make CMakeFiles/Lista.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/Lista.dir/src/main.cpp.o.provides
+
+CMakeFiles/Lista.dir/src/main.cpp.o.provides.build: CMakeFiles/Lista.dir/src/main.cpp.o
+
 # Object files for target Lista
 Lista_OBJECTS = \
 "CMakeFiles/Lista.dir/src/Lista.cpp.o" \
-"CMakeFiles/Lista.dir/src/Nodo.cpp.o"
+"CMakeFiles/Lista.dir/src/Nodo.cpp.o" \
+"CMakeFiles/Lista.dir/src/main.cpp.o"
 
 # External object files for target Lista
 Lista_EXTERNAL_OBJECTS =
 
 Lista: CMakeFiles/Lista.dir/src/Lista.cpp.o
 Lista: CMakeFiles/Lista.dir/src/Nodo.cpp.o
+Lista: CMakeFiles/Lista.dir/src/main.cpp.o
 Lista: CMakeFiles/Lista.dir/build.make
 Lista: CMakeFiles/Lista.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable Lista"
@@ -116,6 +141,7 @@ CMakeFiles/Lista.dir/build: Lista
 
 CMakeFiles/Lista.dir/requires: CMakeFiles/Lista.dir/src/Lista.cpp.o.requires
 CMakeFiles/Lista.dir/requires: CMakeFiles/Lista.dir/src/Nodo.cpp.o.requires
+CMakeFiles/Lista.dir/requires: CMakeFiles/Lista.dir/src/main.cpp.o.requires
 .PHONY : CMakeFiles/Lista.dir/requires
 
 CMakeFiles/Lista.dir/clean:
@@ -123,6 +149,6 @@ CMakeFiles/Lista.dir/clean:
 .PHONY : CMakeFiles/Lista.dir/clean
 
 CMakeFiles/Lista.dir/depend:
-	cd /home/luis/Documentos/Lista/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luis/Documentos/Lista /home/luis/Documentos/Lista /home/luis/Documentos/Lista/build /home/luis/Documentos/Lista/build /home/luis/Documentos/Lista/build/CMakeFiles/Lista.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luis/Escritorio/Lista/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luis/Escritorio/Lista /home/luis/Escritorio/Lista /home/luis/Escritorio/Lista/build /home/luis/Escritorio/Lista/build /home/luis/Escritorio/Lista/build/CMakeFiles/Lista.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Lista.dir/depend
 

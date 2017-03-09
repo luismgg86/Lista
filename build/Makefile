@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Documentos/Lista
+CMAKE_SOURCE_DIR = /home/luis/Escritorio/Lista
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Documentos/Lista/build
+CMAKE_BINARY_DIR = /home/luis/Escritorio/Lista/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documentos/Lista/build/CMakeFiles /home/luis/Documentos/Lista/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Escritorio/Lista/build/CMakeFiles /home/luis/Escritorio/Lista/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Documentos/Lista/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Escritorio/Lista/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -159,6 +159,30 @@ src/Nodo.cpp.s:
 	$(MAKE) -f CMakeFiles/Lista.dir/build.make CMakeFiles/Lista.dir/src/Nodo.cpp.s
 .PHONY : src/Nodo.cpp.s
 
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Lista.dir/build.make CMakeFiles/Lista.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Lista.dir/build.make CMakeFiles/Lista.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Lista.dir/build.make CMakeFiles/Lista.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,6 +198,9 @@ help:
 	@echo "... src/Nodo.o"
 	@echo "... src/Nodo.i"
 	@echo "... src/Nodo.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
