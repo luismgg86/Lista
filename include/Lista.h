@@ -2,13 +2,16 @@
 
 class Lista{
 public:
+    
+    //atributos
 
-	Nodo *H,*T;
+	Nodo *H,*T;//nodos H y T apuntan a la cabeza y a la cola respectivamente
 	int dato;
 
 	Lista(int dato);
 	Lista();
 
+    //metodos
 	void insertarP(int dato);
 	void insertarF(int dato);
 	void insertarRef(int dato,int ref);

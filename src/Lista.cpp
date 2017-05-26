@@ -2,22 +2,22 @@
 
 using namespace std;
 
-	Lista::Lista(){
+	Lista::Lista(){//contructor vacio
 		this->H=NULL;
 		this->T=NULL;
 	}
 
-	Lista::Lista(int dato){
+	Lista::Lista(int dato){//constructor con un dato
 		Nodo *m=new Nodo(dato);
 		this->H=m;
 		this->T=H;
 	}
 
-	bool Lista::IsVacio(){
+	bool Lista::IsVacio(){ //metodo que verifica si la lista esta vacia
 		return(this->T==NULL && this->H==NULL);
 	}
 
-	void Lista::insertarP(int dato){
+	void Lista::insertarP(int dato){ //metodo para insertar nodo al principio
 		Nodo *m=new Nodo(dato,this->H);
 		if (IsVacio())
 		{
@@ -26,7 +26,7 @@ using namespace std;
 		this->H=m;
 	}
 
-	void Lista::insertarF(int dato){
+	void Lista::insertarF(int dato){ //metodo para insertar nodo al final
 		Nodo *m=new Nodo(dato);
 		if(IsVacio()){
 			this->T=m;
@@ -37,7 +37,7 @@ using namespace std;
 		this->T=m;
 	}
 
-	void Lista::insertarRef(int dato,int ref){
+	void Lista::insertarRef(int dato,int ref){ //metodo para insertar nodo por referencia
 		if(IsVacio()){
 			cout<<"Error la lista esta vacia"<<endl;
 			return;
@@ -57,7 +57,7 @@ using namespace std;
 		return;
 	}
 
-	Nodo* Lista::buscar(int ref){
+	Nodo* Lista::buscar(int ref){ //metodo para buscar nodo
 		Nodo *aux=this->H;
 
 		if(IsVacio()){
@@ -73,7 +73,7 @@ using namespace std;
 			return aux;
 	}
 
-	Nodo* Lista::buscar(int ref,Nodo *n){
+	Nodo* Lista::buscar(int ref,Nodo *n){ //metodo para buscar nodo, a este se le pasa un nodo
 
 		if(IsVacio()){
 			cout<<"error la lista esta vacia"<<endl;
@@ -90,7 +90,7 @@ using namespace std;
 		return n;
 	}
 
-	int Lista::borrarP(){
+	int Lista::borrarP(){ //funcion para borrar al principio
 
 		int d=this->H->dato;
 
@@ -110,7 +110,7 @@ using namespace std;
 		return d;
 	}
 
-	int Lista::borrarF(){
+	int Lista::borrarF(){ //metodo para borrar al final
 
 		int d=this->H->dato;
 
@@ -135,7 +135,7 @@ using namespace std;
 		return d;
 	}
 
-	int Lista::borrarRef(int ref){
+	int Lista::borrarRef(int ref){ //metodo para borrar por referencia
 
 		if(IsVacio()){
 			cout<<"error la lista esta vacia"<<endl;
